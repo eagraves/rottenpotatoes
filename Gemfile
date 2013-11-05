@@ -26,6 +26,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'rails_12factor'
 
 # Use unicorn as the web server
 # gem 'unicorn'
