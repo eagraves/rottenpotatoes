@@ -7,7 +7,6 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all(:order => :rating)
     if params[:id] == :title_header
 	@movies = Movie.all(:order => :title)
     elsif params[:id] == :release_date_header
