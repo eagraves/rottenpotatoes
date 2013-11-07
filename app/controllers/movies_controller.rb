@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all(:order => :title)
+    @movies = Movie.all(:order => :rating)
   end
 
   def new
