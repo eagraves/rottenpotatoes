@@ -7,9 +7,9 @@ class MoviesController < ApplicationController
   end
 
   def index
-    if params[:id] == 'title_header'
+    if :id == 'title_header'
 	@movies = Movie.all(:order => :title)
-    elsif params[:id] == 'release_date_header'
+    elsif :id == 'release_date_header'
 	@movies = Movie.all(:order => :release_date)
     else
     	@movies = Movie.all
